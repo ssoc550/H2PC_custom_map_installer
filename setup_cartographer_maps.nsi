@@ -4,6 +4,10 @@ OutFile "Halo 2 Project Cartographer Custom Map Pack.exe"
 # set desktop as install directory
 InstallDir "$Documents\My Games\Halo 2\Maps"
 
+
+!define MUI_ICON "h2pc_logo.ico"
+!define MUI_HEADERIMAGE_BITMAP "h2pc_logo.png"
+
 # default section start
 Section
 
@@ -53,13 +57,6 @@ Section "Uninstall"
 Delete $INSTDIR\uninstaller.exe
 
 # now delete installed file
-Delete $INSTDIR\octagon.map
-Delete $INSTDIR\grounded.map
-Delete $INSTDIR\blastcastle.map
-Delete $INSTDIR\construct.map
-Delete $INSTDIR\corpsys.map
-
-
 Delete $INSTDIR\aso.map
 Delete $INSTDIR\beach_battle.map
 Delete $INSTDIR\blastcastle.map
